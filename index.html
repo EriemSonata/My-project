@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Магічний м'яч</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body background="bg-lightl-904.jpg" bgproperties="fixed" class="background"><br>
+  <h1>МАГІЧНА КУЛЯ</h1>
+  <div class="ball">
+    <img id="8ball" src="800px-Magic_eight_ball.png">
+    <p id="getAnswer">ТУТ З'ЯВИТЬСЯ <br> ВІДПОВІДЬ</p>
+  </div>
+  <form onsubmit="return false">
+    <div class="form-group-1">
+      <label for="task">Ім'я</label>
+      <input type="text" class="form-control-1" id="name" placeholder="   Введи ім'я" onclick="removeError(this)">
+    </div>
+    <div class="form-group-2">
+      <label for="question">Питання</label>
+      <input type="text" class="form-control-2" id="question" placeholder="   Введи питання"
+        onclick="removeError(this)"><br><br>
+    </div class="button">
+    <button type="submit" id="submit" class="questionButton">Дізнатись відповідь</button>
+    </div>
+  </form>
+
+  <table class="table_dark" id="table">
+    <tr>
+      <th scope="col">Ім'я</th>
+      <th scope="col">Питання</th>
+      <th scope="col">Відповідь</th>
+    </tr>
+
+    <tbody id="tbody">
+    </tbody>
+  </table>
+
+  <script src="script.js""></script>
+</body>
+</html>
